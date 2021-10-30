@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Container from '../components/Container';
 import Section from '../components/Section';
+import SkillGrid from '../features/SkillGrid';
 import styles from '../styles/index.module.css';
 
 const Home: NextPage = () => (
@@ -35,6 +36,12 @@ const Home: NextPage = () => (
             feugiat ante sed, suscipit nibh. Vestibulum quis velit arcu. Integer
             suscipit elementum dolor, id bibendum sapien placerat id.
           </p>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <h1 className={styles.sectionHeading}>Skills</h1>
+          <SkillGrid />
         </Container>
       </Section>
     </main>
