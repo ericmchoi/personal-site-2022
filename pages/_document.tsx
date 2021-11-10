@@ -10,7 +10,7 @@ class MyDocument extends Document {
             href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Quicksand&family=Raleway:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Raleway:wght@400;700&display=swap"
             rel="stylesheet"
           />
         </Head>
