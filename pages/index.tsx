@@ -5,6 +5,7 @@ import SkillGrid from '../features/SkillGrid';
 import styles from '../styles/index.module.css';
 import getProjects, { Project } from '../utils/project';
 import ProjectInfo from '../components/ProjectInfo';
+import Contact from '../features/Contact';
 
 const getStaticProps: GetStaticProps = async () => {
   return { props: { projects: getProjects() } };
@@ -62,6 +63,7 @@ const Home: NextPage<{ projects: Project[] }> = ({ projects }) => {
         <Section>
           <Container>
             <h1 className={styles.sectionHeading}>Contact</h1>
+            <Contact />
           </Container>
         </Section>
       </main>
