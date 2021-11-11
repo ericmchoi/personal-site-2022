@@ -21,7 +21,7 @@ const Home: NextPage<{ projects: Project[] }> = ({ projects }) => {
       <main>
         <Section>
           <Container>
-            <h1 className={styles.sectionHeading}>About me</h1>
+            <h1 id="about" className={styles.sectionHeading}>About me</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               bibendum, ante vel aliquet fringilla, neque lacus vulputate justo,
@@ -48,13 +48,13 @@ const Home: NextPage<{ projects: Project[] }> = ({ projects }) => {
         </Section>
         <Section>
           <Container>
-            <h1 className={styles.sectionHeading}>Skills</h1>
+            <h1 id="skills" className={styles.sectionHeading}>Skills</h1>
             <SkillGrid />
           </Container>
         </Section>
         <Section>
           <Container>
-            <h1 className={styles.sectionHeading}>Projects</h1>
+            <h1 id="projects" className={styles.sectionHeading}>Projects</h1>
             {projects.map((project) => (
               <ProjectInfo key={project.name} project={project} />
             ))}
@@ -62,7 +62,7 @@ const Home: NextPage<{ projects: Project[] }> = ({ projects }) => {
         </Section>
         <Section>
           <Container>
-            <h1 className={styles.sectionHeading}>Contact</h1>
+            <h1 id="contact" className={styles.sectionHeading}>Contact</h1>
             <Contact />
           </Container>
         </Section>
