@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   display: flex;
-  gap: 3rem;
+  gap: clamp(1rem, 6vw, 3rem);
   align-items: center;
   justify-content: center;
   height: 2.5rem;
