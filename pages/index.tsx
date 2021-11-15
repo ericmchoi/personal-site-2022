@@ -21,40 +21,41 @@ const Home: NextPage<{ projects: Project[] }> = ({ projects }) => {
       <main>
         <Section>
           <Container>
-            <h1 id="about" className={styles.sectionHeading}>About me</h1>
+            <h1 id="about" className={styles.sectionHeading}>
+              About me
+            </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              bibendum, ante vel aliquet fringilla, neque lacus vulputate justo,
-              non convallis felis velit eget lorem.
+              Hi there! 👋 My name is Eric, and I am a programmer 🖥️ currently
+              focusing on full-stack development. I also have previous
+              experience in infrastructure and devops engineering.
             </p>
             <p>
-              Proin dictum tellus sem, vitae semper tellus consectetur et.
-              Nullam blandit vulputate tortor, ac venenatis elit elementum sit
-              amet. Etiam malesuada, leo a lobortis consequat, eros ipsum cursus
-              augue, sed finibus urna neque non turpis. Phasellus nunc magna,
-              gravida ultricies tortor eu, hendrerit mollis sem.
+              In my free time, you might find me enjoying a freshly brewed cup
+              of coffee. ☕ My current beverage of choice is{' '}
+              <a href="https://www.kumacoffee.com/">Kuma Coffee</a> made in my{' '}
+              <a href="https://en.wikipedia.org/wiki/Moka_pot">Moka Pot</a> and
+              poured over ice.
             </p>
             <p>
-              Sed sem tortor, vestibulum fringilla posuere nec, viverra dapibus
-              massa. Nulla posuere ultricies nisl, a cursus enim mollis at.
-            </p>
-            <p>
-              Ut in ex ornare, lobortis lacus sed, condimentum velit. Nulla
-              vulputate feugiat est vitae accumsan. Aenean ut ligula laoreet,
-              feugiat ante sed, suscipit nibh. Vestibulum quis velit arcu.
-              Integer suscipit elementum dolor, id bibendum sapien placerat id.
+              Thanks for visiting! If you&apos;d like to learn more about me,
+              continue scrolling, and feel free to reach out using my contact
+              info below.
             </p>
           </Container>
         </Section>
         <Section>
           <Container>
-            <h1 id="skills" className={styles.sectionHeading}>Skills</h1>
+            <h1 id="skills" className={styles.sectionHeading}>
+              Skills
+            </h1>
             <SkillGrid />
           </Container>
         </Section>
         <Section>
           <Container>
-            <h1 id="projects" className={styles.sectionHeading}>Projects</h1>
+            <h1 id="projects" className={styles.sectionHeading}>
+              Projects
+            </h1>
             {projects.map((project) => (
               <ProjectInfo key={project.name} project={project} />
             ))}
@@ -62,7 +63,9 @@ const Home: NextPage<{ projects: Project[] }> = ({ projects }) => {
         </Section>
         <Section>
           <Container>
-            <h1 id="contact" className={styles.sectionHeading}>Contact</h1>
+            <h1 id="contact" className={styles.sectionHeading}>
+              Contact
+            </h1>
             <Contact />
           </Container>
         </Section>
