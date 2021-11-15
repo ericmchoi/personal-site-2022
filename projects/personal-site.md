@@ -2,7 +2,7 @@
 name: Personal Portfolio Site
 date: 2020-09-25
 link: '/'
-repo: https://github.com/ericmchoi/personal-site
+repo: https://github.com/ericmchoi/personal-site-2022
 tags:
   - type: js
     text: JavaScript
