@@ -1,11 +1,12 @@
 import type { GetStaticProps, NextPage } from 'next';
+import Head from 'next/head';
 import Container from '../components/Container';
+import ProjectInfo from '../components/ProjectInfo';
 import Section from '../components/Section';
+import Contact from '../features/Contact';
 import SkillGrid from '../features/SkillGrid';
 import styles from '../styles/index.module.css';
 import getProjects, { Project } from '../utils/project';
-import ProjectInfo from '../components/ProjectInfo';
-import Contact from '../features/Contact';
 
 const getStaticProps: GetStaticProps = async () => {
   return { props: { projects: getProjects() } };
@@ -14,6 +15,9 @@ const getStaticProps: GetStaticProps = async () => {
 const Home: NextPage<{ projects: Project[] }> = ({ projects }) => {
   return (
     <div>
+      <Head>
+        <title>Eric Choi | Software Engineer | Home</title>
+      </Head>
       <div className={styles.hero}>
         <div className={styles.heroName}>Eric Choi</div>
         <div className={styles.heroSubtitle}>developer based in Seattle</div>
