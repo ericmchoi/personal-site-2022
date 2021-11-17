@@ -1,7 +1,7 @@
 ---
 name: Episode Tracker
 date: 2020-02-11
-link: https://demo.ericmchoi.dev/ep-tracker/
+link: https://ericmchoi.github.io/episode-tracker/
 repo: https://github.com/ericmchoi/episode-tracker
 tags:
   - type: js
