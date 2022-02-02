@@ -16,10 +16,12 @@ function ProjectInfo({ project }: { project: Project }): JSX.Element {
       </div>
       <p className={styles.description}>{description}</p>
       <div className={styles.links}>
-        <a href={link}>
-          <FaLink className={styles.linkIcon} size="1rem" />
-          Demo
-        </a>
+        {link && (
+          <a href={link}>
+            <FaLink className={styles.linkIcon} size="1rem" />
+            Demo
+          </a>
+        )}
         <a href={repo}>
           <FaGithub className={styles.linkIcon} size="1rem" />
           Repo
