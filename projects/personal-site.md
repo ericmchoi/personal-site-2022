@@ -1,6 +1,6 @@
 ---
 name: Personal Portfolio Site
-date: 2020-09-25
+date: 2020-09-01
 link: '/'
 repo: https://github.com/ericmchoi/personal-site-2022
 tags:
